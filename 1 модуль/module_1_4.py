@@ -1,7 +1,11 @@
-completed_homeworks = 12
-spent_hours = 1.5
-course_name = 'Python'
+my_string = input("Введите произвольный текст: ")
 
-average_time_per_task = spent_hours / completed_homeworks
+print("Количество символов введённого текста: ", len(my_string))
 
-print('Курс:', course_name, ', всего заданий выполнено:', completed_homeworks, ', затрачено часов:', spent_hours, ', среднее время выполнения', average_time_per_task, 'часа.')
+print(f"Строка в верхнем регистре: ", my_string.upper())
+print(f"Строка в нижнем регистре: ", my_string.lower())
+
+my_string_no_spaces = my_string.replace(" ", "")
+print(f"Строка без пробелов: ", my_string_no_spaces)
+print("Первый символ строки: ", my_string[0])
+print(f"Последний символ строки: ", my_string[-1])
