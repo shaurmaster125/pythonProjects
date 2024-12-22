@@ -29,7 +29,6 @@ class Iterator:
         return current
 
 
-# Тестирование
 if __name__ == "__main__":
     # Тест с нулевым шагом
     try:

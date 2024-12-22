@@ -1,13 +1,10 @@
 from random import choice
 
-# Lambda-функция
 first = 'Мама мыла раму'
 second = 'Рамена мало было'
 
-# Создаём lambda-функцию, которая сравнивает символы в одинаковых позициях
 compare = lambda x, y: x.lower() == y.lower()
 result = list(map(compare, first, second))
-
 
 # Замыкание
 def get_advanced_writer(file_name):
@@ -19,7 +16,7 @@ def get_advanced_writer(file_name):
     return write_everything
 
 
-# Пример использования замыкания
+#использование замыкания
 write = get_advanced_writer('example.txt')
 write('Это строчка', ['А', 'это', 'уже', 'число', 5, 'в', 'списке'])
 
@@ -33,7 +30,6 @@ class MysticBall:
         return choice(self.words)
 
 
-# Пример использования класса
 first_ball = MysticBall('Да', 'Нет', 'Наверное')
 print(first_ball())  # Случайное слово
 print(first_ball())  # Случайное слово
